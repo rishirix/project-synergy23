@@ -1,0 +1,29 @@
+/* Style for the button */
+.button {
+    -fx-background-color:  #007788; /* Initial background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-effect: null; /* No shadow effect initially */
+    -fx-transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect for the button */
+.button:hover {
+    -fx-background-color:  #6599a1; /* Background color on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 5, 0.0, 0, 1); /* Shadow effect on hover */
+}
+
+/* Onclick effect for the button */
+
+.button:pressed {
+
+    -fx-background-color: #66959c; /* Darker background color when pressed */
+
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0.0, 0, 1); /* Softer shadow effect when pressed */
+
+    -fx-translate-y: 2px; /* Move the button down slightly */
+
+}

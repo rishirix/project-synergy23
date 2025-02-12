@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controllers.DashboardController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="760.0" layoutX="242.0" opacity="0.06" pickOnBounds="true">
+         <image>
+            <Image url="@image2.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="265.0" layoutY="167.0" prefHeight="173.0" prefWidth="190.0">
+         <children>
+            <FontAwesomeIconView glyphName="BATTERY" layoutX="43.0" layoutY="122.0" size="80" wrappingWidth="102.86132812500011" />
+            <Label layoutX="34.0" layoutY="14.0" text="BATTERY">
+               <font>
+                  <Font name="SansSerif Bold" size="26.0" />
+               </font>
+            </Label>
+            <Text fx:id="batteryStatusLabel" layoutX="41.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BatteryStatus">
+               <font>
+                  <Font name="FreeSans" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <VBox prefHeight="800.0" prefWidth="242.0" style="-fx-background-color: #007788;">
+         <children>
+            <Pane prefHeight="223.0" prefWidth="242.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TRUCK" layoutX="45.0" layoutY="125.0" size="40" wrappingWidth="43.0" />
+                  <Label layoutX="95.0" layoutY="98.0" text="GAR-BOT" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Button alignment="CENTER" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="267.0" stylesheets="@try.css" text="Home">
+               <graphic>
+                  <Icons525View fill="WHITE" glyphName="HOME" size="25" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="26.0" prefWidth="242.0" />
+            <Button alignment="CENTER" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="242.0" stylesheets="@try.css" text="Users">
+               <graphic>
+                  <Icons525View fill="WHITE" glyphName="USER" size="25" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="26.0" prefWidth="242.0" />
+            <Button alignment="CENTER" graphicTextGap="10.0" layoutX="10.0" layoutY="72.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="242.0" stylesheets="@try.css" text="Settings">
+               <graphic>
+                  <Icons525View fill="WHITE" glyphName="WRENCH" size="25" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="26.0" prefWidth="242.0" />
+            <Button fx:id="logoutButton" alignment="CENTER" graphicTextGap="10.0" layoutX="10.0" layoutY="134.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="242.0" stylesheets="@try.css" text="Logout">
+               <graphic>
+                  <Icons525View fill="WHITE" glyphName="LOGOUT" size="25" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="500.0" layoutY="167.0" prefHeight="173.0" prefWidth="190.0">
+         <children>
+            <FontAwesomeIconView glyphName="TRASH" layoutX="65.0" layoutY="115.0" size="80" wrappingWidth="62.861328125" />
+            <Label layoutX="25.0" layoutY="14.0" text="CAPACITY">
+               <font>
+                  <Font name="SansSerif Bold" size="26.0" />
+               </font>
+            </Label>
+            <Text fx:id="capacityLabel" layoutX="64.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity">
+               <font>
+                  <Font name="FreeSans" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="728.0" layoutY="167.0" prefHeight="173.0" prefWidth="190.0">
+         <children>
+            <FontAwesomeIconView glyphName="GEAR" layoutX="60.0" layoutY="115.0" size="80" wrappingWidth="70.86132812500011" />
+            <Label layoutX="37.0" layoutY="12.0" text="STATUS">
+               <font>
+                  <Font name="SansSerif Bold" size="26.0" />
+               </font>
+            </Label>
+            <Text fx:id="statusLabel" layoutX="70.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+               <font>
+                  <Font name="FreeSans" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Label layoutX="265.0" layoutY="41.0" prefHeight="72.0" prefWidth="518.0" text="OVERVIEW">
+         <font>
+            <Font name="Roboto Bold" size="55.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.46052631735801697" green="0.46052631735801697" blue="0.46052631735801697" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Button fx:id="chargeButton" layoutX="311.0" layoutY="360.0" mnemonicParsing="false" stylesheets="@try.css" text="Charge" />
+      <Button fx:id="clearButton" layoutX="556.0" layoutY="360.0" mnemonicParsing="false" stylesheets="@try.css" text="Clear" />
+      <Button fx:id="logsButton" layoutX="785.0" layoutY="358.0" mnemonicParsing="false" stylesheets="@try.css" text="Logs" />
+   </children>
+</AnchorPane>
